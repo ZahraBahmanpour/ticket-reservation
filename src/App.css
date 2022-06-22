@@ -20,3 +20,23 @@ body {
   background-color: #5384fd;
   color: white;
 }
+
+.drop-down {
+  padding: 30px;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: #edf3ff;
+  border: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.drop-down:focus {
+  outline: none;
+}
+
+.drop-down:hover {
+  background-color: white;
+  box-shadow: 2px 7px 18px -4px rgba(0, 0, 0, 0.66);
+  transition: all 0.5s;
+}

@@ -1,8 +1,12 @@
+import DropDown from './DropDown';
 import SearchNav from './SearchNav';
 const style = {
+  display: 'flex',
+  flexDirection: 'column',
   backgroundColor: 'white',
   margin: '10%',
   borderRadius: '20px',
+  padding: '20px',
 };
 const searchItems = [
   'Internal Flights',
@@ -10,10 +14,16 @@ const searchItems = [
   'Hotels',
   'Train',
 ];
+const contentStyle = {
+  display: 'flex',
+};
 const SearchPanel = () => {
   return (
     <div style={style}>
       <SearchNav searchItems={searchItems}></SearchNav>
+      <div style={contentStyle}>
+        <DropDown />
+      </div>
     </div>
   );
 };
