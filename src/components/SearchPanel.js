@@ -7,6 +7,7 @@ const style = {
   margin: '10%',
   borderRadius: '20px',
   padding: '20px',
+  height: '300px',
 };
 const searchItems = [
   'Internal Flights',

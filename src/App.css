@@ -40,3 +40,9 @@ body {
   box-shadow: 2px 7px 18px -4px rgba(0, 0, 0, 0.66);
   transition: all 0.5s;
 }
+
+.drop-down-item:hover {
+  background-color: #f2f4f5;
+  color: #4885ff;
+  cursor: pointer;
+}
