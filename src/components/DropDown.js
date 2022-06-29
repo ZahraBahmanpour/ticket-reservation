@@ -28,7 +28,6 @@ const DropDown = () => {
 
   useEffect(() => {
     const handleOutSideClick = (e) => {
-      console.log(dropDownRef.current);
       if (dropDownRef.current && !dropDownRef.current.contains(e.target)) {
         setIsOpen(false);
       }
@@ -36,8 +35,6 @@ const DropDown = () => {
     document.addEventListener('click', handleOutSideClick);
   }, []);
 
-  console.log(cities);
-  console.log(selected);
   const handleItemClick = (id) => {
     setSelected(id);
     setIsOpen(false);
